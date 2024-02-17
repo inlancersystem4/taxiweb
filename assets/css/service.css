@@ -1,0 +1,25 @@
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+.service-list .service-box {
+  width: 100%;
+}
+.service-list .service-box .service-img {
+  width: 100%;
+  padding-top: 68%;
+  position: relative;
+}
+.service-list .service-box .service-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-list .service-box .service-details {
+  border: 1px solid;
+}/*# sourceMappingURL=service.css.map */

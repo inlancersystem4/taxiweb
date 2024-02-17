@@ -1,0 +1,37 @@
+.th-btn {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #E30D16;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 21px 31px;
+  border-radius: 0;
+  border: none;
+}
+
+.th-btn:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 200%;
+  background-color: #000;
+  transform-style: preserve-3d;
+  transform: scale(1, 0);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.th-btn:hover::before,
+.th-btn.active::before {
+  transform-origin: center center;
+  transform: scale(1);
+}/*# sourceMappingURL=btn.css.map */

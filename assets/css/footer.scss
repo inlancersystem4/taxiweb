@@ -1,0 +1,253 @@
+.footer {
+    border-top: 1px solid $border_Color;
+    position: relative;
+
+
+    .footer-content {
+        background-color: $background_Color;
+        padding: 40px 0;
+        position: relative;
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            width: 100%;
+            gap: 24px;
+
+            .footer-col {
+
+                .footer-about-section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .logo {
+                        margin-bottom: 8px;
+                        display: block;
+
+                        img {
+                            max-width: 120px;
+                            height: auto;
+                        }
+                    }
+
+                    .title {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $text_Color;
+                        margin-bottom: 6px;
+                    }
+
+                    .description {
+                        font-size: 16px;
+                        color: $theme_Color_black;
+                    }
+
+                    .social-media-link {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        li {
+                            a {
+                                min-width: 36px;
+                                max-width: 36px;
+                                min-height: 36px;
+                                max-height: 36px;
+                                background-color: $text_Color;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: background-color 0.3s;
+                                -webkit-transition: background-color 0.3s;
+                                -moz-transition: background-color 0.3s;
+                                -ms-transition: background-color 0.3s;
+                                -o-transition: background-color 0.3s;
+
+                                &:hover,
+                                &:focus {
+                                    background-color: $theme_Color;
+
+                                    i {
+                                        color: $black;
+                                    }
+                                }
+
+                                i {
+                                    color: $white;
+                                    font-size: 16px;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+
+
+                .footer-title {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    position: relative;
+                    margin-bottom: 26px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 127%;
+                        background-color: $theme_Color;
+                        height: 4px;
+                        width: 10%;
+                        border-radius: 999px;
+                        -webkit-border-radius: 999px;
+                        -moz-border-radius: 999px;
+                        -ms-border-radius: 999px;
+                        -o-border-radius: 999px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 11%;
+                        top: 127%;
+                        background-color: $theme_Color;
+                        height: 4px;
+                        width: 18%;
+                        border-radius: 999px;
+                        -webkit-border-radius: 999px;
+                        -moz-border-radius: 999px;
+                        -ms-border-radius: 999px;
+                        -o-border-radius: 999px;
+                    }
+
+                }
+
+                .footer-link_list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+
+                        a {
+                            font-size: 16px;
+                            display: block;
+                            width: 100%;
+                            color: $theme_Color_black;
+                            text-transform: capitalize;
+                            position: relative;
+
+                            &::before {
+                                content: '\21FE';
+                                margin-right: 8px;
+                            }
+
+                        }
+                    }
+
+                }
+
+                .footer-contact_list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    li {
+                        .title {
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $text_Color;
+                            margin-bottom: 10px;
+                        }
+
+                        .contact-details {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+
+                            .icon {
+                                min-width: 32px;
+                                max-width: 32px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                min-height: 32px;
+                                max-height: 32px;
+                                background-color: $theme_Color;
+
+                                i {
+                                    font-size: 16px;
+                                }
+
+                            }
+
+                            .link {
+                                font-size: 16px;
+                                color: $theme_Color_black;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .news-letter-detail {
+                    font-size: 16px;
+                    color: $theme_Color_black;
+                    line-height: 1.3;
+                    margin-bottom: 20px;
+                }
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 12px;
+
+                    input {
+                        border: 1px solid $border_Color;
+                        width: 100%;
+                        background-color: $white;
+                        padding: 12px;
+                        font-size: 18px;
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .copywrite {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        background-color: $theme_Color_black;
+
+        p {
+            color: $white;
+            font-size: 14px;
+            text-transform: capitalize;
+
+            a {
+                color: $theme_Color !important;
+            }
+
+        }
+    }
+
+}

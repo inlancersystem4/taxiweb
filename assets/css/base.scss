@@ -1,0 +1,55 @@
+.section-space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .container.space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    color: $theme_Color_black;
+    margin: 12px 0;
+}
+
+.section-effect_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: $theme_Color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 14px;
+    align-items: center;
+    width: 100%;
+}
+
+.section-effect_title:after,
+.section-effect_title:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid $theme_Color;
+    border-top: 1px solid $theme_Color;
+    height: 5px;
+}
+
+#reviewSection {
+    background-color: $background_Color;
+    border-top: 1px solid $border_Color;
+    border-bottom: 1px solid $border_Color;
+}

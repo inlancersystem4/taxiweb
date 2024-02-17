@@ -1,0 +1,99 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+}
+
+.swiper-slide {
+    width: auto;
+    border: 1px solid $border_Color;
+    padding: 2px;
+    height: auto;
+    margin-top: 32px;
+}
+
+
+.review-container {
+    min-width: 529px;
+    max-width: 529px;
+    background-color: $white;
+    position: relative;
+    padding: 22px;
+
+
+    .customer-img {
+        width: 80px;
+        height: 80px;
+        margin-top: -60px;
+        border: 1px solid $border_Color;
+        padding: 2px;
+        background-color: $white;
+        border-radius: 999px;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        -ms-border-radius: 999px;
+        -o-border-radius: 999px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 2px;
+            border-radius: 999px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            -ms-border-radius: 999px;
+            -o-border-radius: 999px;
+        }
+
+    }
+
+    .customer-review-content {
+        margin-top: 16px;
+
+        .review {
+            font-size: 16px;
+            line-height: 1.6;
+            color: $theme_Color_black;
+        }
+
+        .customer-details {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            gap: 12px;
+            margin-top: 14px;
+
+            .customer-name {
+                font-size: 15px;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                color: $text_Color;
+                font-weight: 600;
+            }
+
+            .customer-job {
+                font-size: 12px;
+                margin-top: 6px;
+                color: $black;
+            }
+
+            .customer-review-star {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .bi-star-fill {
+                    color: $theme_Color;
+                }
+            }
+
+        }
+    }
+
+}

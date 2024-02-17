@@ -1,0 +1,238 @@
+.header {
+    width: 100%;
+    background-color: $background_Color;
+    margin-bottom: 24px;
+
+    .top-tagline {
+        width: 100%;
+        border-bottom: 1px solid $border_Color;
+
+
+        .container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+
+
+            .tagline-content {
+
+                &:nth-last-child(1) {
+                    // width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 12px;
+                    padding: 6px;
+
+                    .title {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+
+                    .social-media-link {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        a {
+                            padding: 4px;
+                            outline: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            color: $text_Color;
+                            transition: color 0.2s;
+                            -webkit-transition: color 0.2s;
+                            -moz-transition: color 0.2s;
+                            -ms-transition: color 0.2s;
+                            -o-transition: color 0.2s;
+
+                            &:hover,
+                            &:focus {
+                                color: $theme_Color;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+
+                &:nth-child(1) {
+                    background-color: $text_Color;
+                    clip-path: polygon(0% 0%, 86% 0%, 100% 49%, 86% 100%, 0% 100%);
+
+                    .company-policy-pages {
+                        width: 100%;
+                        height: 100%;
+                        padding: 6px 120px 6px 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        li {
+
+                            ::after {
+                                content: '|';
+                                color: $white;
+                                margin-left: 8px;
+                            }
+
+                            &:nth-last-child(1) {
+                                ::after {
+                                    display: none;
+                                }
+                            }
+
+
+                            a {
+                                padding: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                                color: $border_Color;
+                                font-size: 14px;
+                                outline: none;
+                                line-height: normal;
+                                transition: color 0.2s;
+                                -webkit-transition: color 0.2s;
+                                -moz-transition: color 0.2s;
+                                -ms-transition: color 0.2s;
+                                -o-transition: color 0.2s;
+
+
+                                &:hover,
+                                &:focus {
+                                    color: $theme_Color;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .header-content {
+        width: 100%;
+        border-bottom: 1px solid $border_Color;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px;
+
+            .logo {
+                img {
+                    max-width: 80px;
+                    height: auto;
+                }
+            }
+
+            .company-contact-detail {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 32px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .icon {
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 999px;
+                        -webkit-border-radius: 999px;
+                        -moz-border-radius: 999px;
+                        -ms-border-radius: 999px;
+                        -o-border-radius: 999px;
+                        background-color: $border_Color;
+                        backdrop-filter: blur(14px);
+
+                        i {
+                            color: $theme_Color_black;
+                            font-size: 18px;
+                        }
+
+                    }
+
+                    .label {
+                        font-size: 12px;
+                        color: $text_Color;
+                        text-transform: capitalize;
+                        margin-bottom: 4px;
+                    }
+
+                    .link {
+                        font-size: 16px;
+                        color: $theme_Color_black;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .navbar {
+        padding: 0 !important;
+        background-color: $theme_Color;
+        margin-bottom: -18px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+
+            .nav-link {
+                padding: 12px 24px !important;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+                display: block;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 0.04em;
+                transition: background-color 0.2s;
+                -webkit-transition: background-color 0.2s;
+                -moz-transition: background-color 0.2s;
+                -ms-transition: background-color 0.2s;
+                -o-transition: background-color 0.2s;
+
+                &:hover,
+                &:focus {
+                    background-color: $text_Color;
+                    color: $white !important;
+                }
+
+            }
+
+        }
+
+    }
+
+}
