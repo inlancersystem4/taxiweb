@@ -15,6 +15,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper("#heroBanner", {
     centeredSlides: true,
+    loop: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
