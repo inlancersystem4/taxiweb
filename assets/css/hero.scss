@@ -5,10 +5,11 @@
     .swiper-slide {
         position: relative;
         width: 100%;
-        height: 100%;
-        padding-top: 140px;
-        padding-bottom: 140px;
-        justify-content: flex-start !important;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
 
         .slider_img {
             position: absolute;
@@ -24,12 +25,10 @@
             inset: 0;
             width: 100%;
             height: 100%;
-            background-color: $balck;
-            opacity: 0.4s;
+            background-color: $black;
+            opacity: 0.4;
             z-index: 8;
         }
-
-
 
         .container {
             display: flex;
@@ -37,12 +36,12 @@
             gap: 24px;
             align-items: flex-start;
             justify-content: flex-start;
-            max-width: 50%;
-            margin-right: auto;
             position: relative;
             z-index: 9;
 
             .hero-content {
+                max-width: 50%;
+                padding-bottom: 24px;
 
                 .content-sub_title {
                     display: inline-block;
@@ -57,20 +56,54 @@
                     font-size: 42px;
                     text-transform: capitalize;
                     font-weight: 700;
-                    color: $text_Color;
+                    color: $white;
                     margin-bottom: 20px;
                 }
 
                 .content-description {
                     font-size: 16px;
                     line-height: 1.6;
-                    color: $theme_Color_black;
+                    color: $background_Color;
                 }
-
             }
+        }
+    }
+}
 
+
+.booking-form {
+
+    margin-top: -62px;
+    position: relative;
+    z-index: 9;
+
+    .input-wrap {
+        width: 100%;
+        background-color: $white;
+        padding: 40px 40px 20px 40px;
+        box-shadow: 0px 12px 25px rgba(1, 19, 60, 0.02);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+
+        input {
+            height: 55px;
+            padding: 0 25px;
+            padding-right: 45px;
+            border: 1px solid $border_Color;
+            color: $text_Color;
+            background-color: $white;
+            border-radius: 9999px;
+            border-radius: 0;
+            font-size: 16px;
+            width: 100%;
+            font-family: "Radio Canada", sans-serif;
+            outline: none;
+
+            &:focus {
+                border: 1px solid $theme_Color;
+            }
         }
 
     }
-
 }
