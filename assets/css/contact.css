@@ -1,0 +1,7 @@
+#contactSection {
+  width: 100%;
+}
+#contactSection .container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}/*# sourceMappingURL=contact.css.map */

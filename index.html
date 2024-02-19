@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taxi Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -22,7 +22,10 @@
                             <a href="#">privacy policy</a>
                         </li>
                         <li>
-                            <a href="#">support center</a>
+                            <a href="#">terms condition</a>
+                        </li>
+                        <li>
+                            <a href="#">Support Center</a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +124,7 @@
                             </p>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1707343846292-56e4c6abf291?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://images.unsplash.com/photo-1500298281307-dcc46bf727d8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Hero Slide 1" class="slider_img" />
                 </div>
                 <div class="swiper-slide">
@@ -137,7 +140,7 @@
                             </p>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1682686581663-179efad3cd2f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://images.unsplash.com/photo-1556122071-e404eaedb77f?q=80&w=1434&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Hero Slide 2" class="slider_img" />
                 </div>
                 <div class="swiper-slide">
@@ -153,7 +156,7 @@
                             </p>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://images.unsplash.com/photo-1628947733273-cdae71c9bfd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Hero Slide 3" class="slider_img" />
                 </div>
                 <div class="swiper-slide">
@@ -170,7 +173,7 @@
                             </p>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1708269311289-fc780cf2cfdc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://images.unsplash.com/photo-1504971737233-9a29c29c17cb?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Hero Slide 4" class="slider_img" />
                 </div>
             </div>
@@ -181,26 +184,26 @@
         <div class="container">
             <form class="input-wrap">
 
-                <input type="text" name="name" id="Name" placeholder="Your Name" />
-                <input type="number" name="number" id="Name" placeholder="Phone Number" />
-                <input type="number" name="name" id="Name" placeholder="Select Passenger" />
-                <input type="text" name="name" id="Name" placeholder="Start destinction" />
-                <input type="text" name="name" id="Name" placeholder="End destinction" />
-                <input type="date" name="name" id="Name" placeholder="Select Date" />
-                <input type="time" name="name" id="Name" placeholder="Select Time" />
-                <button class="th-btn">Book Taxi</button>
+                <input type="text" name="name" id="NameInput" placeholder="Your Name" />
+                <input type="tel" name="number" id="PhoneNumberInput" placeholder="Phone Number" />
+                <input type="number" name="passengerCount" id="PassengerCountInput" placeholder="Select Passenger" />
+                <input type="text" name="startDestination" id="StartDestinationInput" placeholder="Start Destination" />
+                <input type="text" name="endDestination" id="EndDestinationInput" placeholder="End Destination" />
+                <input type="date" name="selectedDate" id="DateInput" placeholder="Select Date" />
+                <input type="time" name="selectedTime" id="TimeInput" placeholder="Select Time" />
+                <button type="submit" class="th-btn">Book Taxi</button>
 
 
             </form>
         </div>
     </div>
 
-    <section class="section-space">
+    <section class="section-space" id="aboutSection">
         <div class="container space">
             <div class="about_grid">
                 <div class="about_img-section">
                     <div class="img1">
-                        <img src="https://images.unsplash.com/photo-1708022792768-edfab8b2be7a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="https://images.unsplash.com/photo-1581252167463-ace4d8ee5c4f?q=80&w=1575&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="img-1" />
                     </div>
                     <div class="box1">
@@ -276,9 +279,12 @@
         </div>
     </section>
 
-    <section class="section-space">
+    <section class="section-space" id="serviceSection">
         <div class="container space">
-            <h1 class="section-effect_title">Our Services</h1>
+            <div class="w-100">
+                <h1 class="section-effect_title">Our Services</h1>
+                <h1 class="section-title">Our Services</h1>
+            </div>
             <div class="service-list">
                 <article class="service-box">
                     <div class="service-img">
@@ -446,7 +452,26 @@
 
     <section class="section-space" id="contactSection">
         <div class="container space">
-
+            <div class="contact_map-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14769.618021205035!2d70.7867522!3d22.262662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb6eeacd6cff%3A0x82cf21cd01166d9a!2sInlancer%20Technologies%20-%20Software%20Development%20Company!5e0!3m2!1sen!2sin!4v1708324504107!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact_content">
+                <h2 class="title">Request Your <span> Personalized </span> Quote</h2>
+                <p class="sub-title">Our experienced team is here to assist you. Reach out to us for a customized quote
+                    tailored to your needs.</p>
+                <form class="contact_form">
+                    <input type="text" name="name" id="NameInput" placeholder="Enter Your Name" />
+                    <input type="email" name="email" id="EmailInput" placeholder="Enter Your Email" />
+                    <input type="tel" name="phone1" id="Phone1Input" placeholder="Phone Number" />
+                    <input type="tel" name="phone2" id="Phone2Input" placeholder="Another Phone Number" />
+                    <textarea name="message" id="MessageInput" cols="30" rows="10"
+                        placeholder="Your Message"></textarea>
+                    <button type="submit" class="th-btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 

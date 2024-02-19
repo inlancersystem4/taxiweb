@@ -1,0 +1,80 @@
+#contactSection {
+    width: 100%;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 !important;
+        align-items: stretch;
+
+        .contact_content {
+            width: 100%;
+            background-color: $background_Color;
+            height: auto;
+            padding: 40px;
+
+
+            .title {
+                font-size: 42px;
+                text-transform: capitalize;
+                margin-bottom: 12px;
+                color: $theme_Color_black;
+                font-weight: 600;
+
+                span {
+                    color: $theme_Color;
+                }
+
+            }
+
+            .sub-title {
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            .contact_form {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 24px;
+
+
+                input,
+                textarea {
+                    height: 55px;
+                    padding: 0 25px;
+                    padding-right: 45px;
+                    border: 1px solid $border_Color;
+                    color: $text_Color;
+                    background-color: $white;
+                    border-radius: 9999px;
+                    border-radius: 0;
+                    font-size: 16px;
+                    width: 100%;
+                    font-family: "Radio Canada", sans-serif;
+                    outline: none;
+
+                    &:focus {
+                        border: 1px solid $theme_Color;
+                    }
+                }
+
+                textarea {
+                    grid-column: span 2 / span 2;
+                    min-height: 150px;
+                    max-height: 150px;
+                    padding-top: 18px;
+                    resize: none;
+                }
+
+                button {
+                    grid-column: span 2 / span 2;
+                }
+
+            }
+
+        }
+
+    }
+
+}

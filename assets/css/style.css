@@ -14,6 +14,7 @@ body {
   height: 100%;
   max-width: 100%;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -35,6 +36,15 @@ ul,
 li,
 ol {
   list-style: none;
+}
+
+input[type=number],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .header {
@@ -961,7 +971,7 @@ ol {
   width: 100%;
   background-color: #FFFFFF;
   padding: 40px 40px 20px 40px;
-  box-shadow: 0px 12px 25px rgba(1, 19, 60, 0.02);
+  box-shadow: 0px 12px 25px rgba(1, 19, 60, 0.06);
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
@@ -982,6 +992,71 @@ ol {
 }
 .booking-form .input-wrap input:focus {
   border: 1px solid #FFC005;
+}
+
+#contactSection {
+  width: 100%;
+}
+#contactSection .container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 !important;
+  align-items: stretch;
+}
+#contactSection .container .contact_content {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: auto;
+  padding: 40px;
+}
+#contactSection .container .contact_content .title {
+  font-size: 42px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  color: #181818;
+  font-weight: 600;
+}
+#contactSection .container .contact_content .title span {
+  color: #FFC005;
+}
+#contactSection .container .contact_content .sub-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+#contactSection .container .contact_content .contact_form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+#contactSection .container .contact_content .contact_form input,
+#contactSection .container .contact_content .contact_form textarea {
+  height: 55px;
+  padding: 0 25px;
+  padding-right: 45px;
+  border: 1px solid #e0e0e0;
+  color: #333333;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  border-radius: 0;
+  font-size: 16px;
+  width: 100%;
+  font-family: "Radio Canada", sans-serif;
+  outline: none;
+}
+#contactSection .container .contact_content .contact_form input:focus,
+#contactSection .container .contact_content .contact_form textarea:focus {
+  border: 1px solid #FFC005;
+}
+#contactSection .container .contact_content .contact_form textarea {
+  grid-column: span 2/span 2;
+  min-height: 150px;
+  max-height: 150px;
+  padding-top: 18px;
+  resize: none;
+}
+#contactSection .container .contact_content .contact_form button {
+  grid-column: span 2/span 2;
 }
 
 .section-space {
