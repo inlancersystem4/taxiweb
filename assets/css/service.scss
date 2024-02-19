@@ -86,6 +86,7 @@
 
         &:hover .service-details {
             background-color: $text_Color;
+            border-color: transparent;
         }
 
         &:hover .service-title {
@@ -105,8 +106,8 @@
         &:hover .service-description {
             color: $white;
             display: block;
-            animation: show_description 2s ease forwards;
-            -webkit-animation: show_description 2s ease forwards;
+            animation: show_description 1s ease forwards;
+            -webkit-animation: show_description 1s ease forwards;
         }
     }
 }

@@ -7,3 +7,9 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+var swiper = new Swiper("#heroBanner", {
+    centeredSlides: true,
+    effect: "fade",
+});

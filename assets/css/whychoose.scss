@@ -1,0 +1,100 @@
+#chooseSection {
+    background-color: $background_Color;
+    border-top: 1px solid $border_Color;
+    border-bottom: 1px solid $border_Color;
+}
+
+.choose_grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+
+
+    .feature-card {
+        background-color: $white;
+        padding: 60px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 0;
+            background-color: var(--title-color);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out;
+        }
+
+        &:nth-child(2) {
+            background-color: $text_Color;
+
+            .feature-card_title {
+                color: $white;
+            }
+
+
+            .feature-card_text {
+                color: $white;
+            }
+
+        }
+
+
+        .shape-icon {
+            width: 136px;
+            height: 136px;
+            margin: 0 auto 40px auto;
+            -webkit-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            -moz-transition: 0.4s ease-in-out;
+            -ms-transition: 0.4s ease-in-out;
+            -o-transition: 0.4s ease-in-out;
+
+            .mask-image {
+                background-color: $theme_Color;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: 999px;
+                -webkit-border-radius: 999px;
+                -moz-border-radius: 999px;
+                -ms-border-radius: 999px;
+                -o-border-radius: 999px;
+            }
+
+            i {
+                font-size: 42px;
+            }
+
+        }
+
+        .feature-card_title {
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            -webkit-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out;
+            color: $text_Color;
+        }
+
+        .feature-card_text {
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: normal;
+        }
+
+    }
+
+}

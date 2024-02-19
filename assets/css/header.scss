@@ -1,7 +1,9 @@
 .header {
     width: 100%;
+    z-index: 99;
+    position: relative;
     background-color: $background_Color;
-    margin-bottom: 24px;
+
 
     .top-tagline {
         width: 100%;

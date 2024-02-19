@@ -1,0 +1,12 @@
+#heroSection {
+  width: 100%;
+  position: relative;
+}
+#heroSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 50%;
+  margin-left: auto;
+}/*# sourceMappingURL=hero.css.map */
