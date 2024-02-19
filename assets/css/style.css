@@ -526,6 +526,13 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: center;
   margin-top: -52px;
 }
+.service-list .service-box .service-details .icon i {
+  font-size: 42px;
+}
+.service-list .service-box .service-details .icon svg {
+  width: 72px;
+  height: auto;
+}
 .service-list .service-box .service-details .service-title {
   color: #333333;
   font-size: 22px;
@@ -859,6 +866,9 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -876,6 +886,10 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-border-radius: 999px;
   -ms-border-radius: 999px;
   -o-border-radius: 999px;
+  -webkit-mask-image: url("../images/mask-img.png");
+          mask-image: url("../images/mask-img.png");
+  -webkit-mask-size: cover;
+          mask-size: cover;
 }
 .choose_grid .feature-card .shape-icon i {
   font-size: 42px;

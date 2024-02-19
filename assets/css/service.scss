@@ -55,6 +55,16 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: -52px;
+
+                i {
+                    font-size: 42px;
+                }
+
+                svg {
+                    width: 72px;
+                    height: auto;
+                }
+
             }
 
             .service-title {

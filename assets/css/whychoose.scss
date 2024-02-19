@@ -54,6 +54,9 @@
             text-align: center;
             position: relative;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             -moz-transition: 0.4s ease-in-out;
             -ms-transition: 0.4s ease-in-out;
             -o-transition: 0.4s ease-in-out;
@@ -71,6 +74,8 @@
                 -moz-border-radius: 999px;
                 -ms-border-radius: 999px;
                 -o-border-radius: 999px;
+                mask-image: url('../images/mask-img.png');
+                mask-size: cover;
             }
 
             i {
