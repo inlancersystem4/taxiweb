@@ -225,6 +225,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #333333;
   color: #FFFFFF !important;
 }
+.header .mobile-menu_show {
+  display: none;
+}
 
 .th-btn {
   position: relative;
@@ -1026,7 +1029,6 @@ input[type=number]::-webkit-outer-spin-button {
 #contactSection .container .contact_content .contact_form textarea {
   height: 55px;
   padding: 0 25px;
-  padding-right: 45px;
   border: 1px solid #e0e0e0;
   color: #333333;
   background-color: #FFFFFF;
@@ -1181,11 +1183,61 @@ input[type=number]::-webkit-outer-spin-button {
     right: 0;
     bottom: 0;
   }
+  .header .top-tagline .container {
+    padding: 0;
+  }
 }
-@media (max-width: 490px) {
-  .header {
+@media (max-width: 690px) {
+  .header .open-icon {
+    display: block;
+  }
+  .header .close-icon {
     display: none;
   }
+  .header .top-tagline {
+    display: none;
+  }
+  .header .header-content .container .company-contact-detail {
+    display: none;
+  }
+  .header .navbar.container {
+    display: none;
+  }
+  .header .mobile-menu_show {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC005;
+    border: 1px solid transparent;
+    outline: none;
+    margin-right: 24px;
+  }
+  .header .navbar.container {
+    display: none;
+  }
+  .header.mobile-navbar_show .open-icon {
+    display: none;
+  }
+  .header.mobile-navbar_show .close-icon {
+    display: block;
+  }
+  .header.mobile-navbar_show .navbar.container {
+    display: block;
+  }
+  .header.mobile-navbar_show .navbar.container .nav-list {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .header.mobile-navbar_show .navbar.container .nav-list li {
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+}
+@media (max-width: 490px) {
   .section-space {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1279,10 +1331,21 @@ input[type=number]::-webkit-outer-spin-button {
   #reviewSection .container {
     padding: 0 !important;
   }
+  #reviewSection .swiper-slide {
+    margin-top: 42px;
+  }
   #reviewSection .review-container {
     min-width: 340px;
     padding: 18px;
     max-width: 340px;
+  }
+  #reviewSection .review-container .customer-img {
+    width: 72px;
+    height: 72px;
+  }
+  #reviewSection .review-container .customer-review-content .review {
+    font-size: 14px;
+    line-height: 1.4;
   }
   #reviewSection .swiper-pagination {
     display: none;
@@ -1303,7 +1366,15 @@ input[type=number]::-webkit-outer-spin-button {
   #contactSection .container .contact_content .contact_form {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  #contactSection .container .contact_content .contact_form input,
   #contactSection .container .contact_content .contact_form textarea {
+    height: 45px;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+  }
+  #contactSection .container .contact_content .contact_form textarea {
+    padding-top: 16px;
     grid-column: span 1/span 1;
   }
   #contactSection .container .contact_content .contact_form button {

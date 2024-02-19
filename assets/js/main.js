@@ -22,3 +22,9 @@ var swiper = new Swiper("#heroBanner", {
     },
     effect: "fade",
 });
+
+$(document).ready(function () {
+    $('.mobile-menu_show').on('click', function () {
+        $('.header').toggleClass('mobile-navbar_show');
+    });
+});

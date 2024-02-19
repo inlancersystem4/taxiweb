@@ -128,13 +128,93 @@
         }
     }
 
+    .header {
+        .top-tagline {
+            .container {
+                padding: 0;
+            }
+        }
+    }
+
+}
+
+@media (max-width:690px) {
+    .header {
+
+        .open-icon {
+            display: block;
+        }
+
+        .close-icon {
+            display: none;
+        }
+
+
+        .top-tagline {
+            display: none;
+        }
+
+        .header-content {
+            .container {
+                .company-contact-detail {
+                    display: none;
+                }
+            }
+        }
+
+        .navbar.container {
+            display: none;
+        }
+
+        .mobile-menu_show {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $theme_Color;
+            border: 1px solid transparent;
+            outline: none;
+            margin-right: 24px;
+        }
+
+        .navbar.container {
+            display: none;
+
+        }
+    }
+
+    .header.mobile-navbar_show {
+
+        .open-icon {
+            display: none;
+        }
+
+        .close-icon {
+            display: block;
+        }
+
+        .navbar.container {
+            display: block;
+
+            .nav-list {
+                flex-direction: column;
+                text-align: left;
+                width: 100%;
+                align-items: flex-start;
+
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+
 }
 
 
 @media (max-width:490px) {
-    .header {
-        display: none;
-    }
 
     .section-space {
         padding-top: 40px;
@@ -279,11 +359,29 @@
             padding: 0 !important;
         }
 
+        .swiper-slide {
+            margin-top: 42px;
+        }
+
         .review-container {
             min-width: 340px;
             padding: 18px;
             max-width: 340px;
+
+            .customer-img {
+                width: 72px;
+                height: 72px;
+            }
+
+            .customer-review-content {
+                .review {
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+            }
+
         }
+
 
         .swiper-pagination {
             display: none;
@@ -314,7 +412,17 @@
                 .contact_form {
                     grid-template-columns: repeat(1, minmax(0, 1fr));
 
+
+                    input,
                     textarea {
+                        height: 45px;
+                        padding: 0 20px;
+                        background-color: $white;
+                        font-size: 16px;
+                    }
+
+                    textarea {
+                        padding-top: 16px;
                         grid-column: span 1 / span 1;
                     }
 

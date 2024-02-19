@@ -171,10 +171,21 @@
   #reviewSection .container {
     padding: 0 !important;
   }
+  #reviewSection .swiper-slide {
+    margin-top: 42px;
+  }
   #reviewSection .review-container {
     min-width: 340px;
     padding: 18px;
     max-width: 340px;
+  }
+  #reviewSection .review-container .customer-img {
+    width: 72px;
+    height: 72px;
+  }
+  #reviewSection .review-container .customer-review-content .review {
+    font-size: 14px;
+    line-height: 1.4;
   }
   #reviewSection .swiper-pagination {
     display: none;
