@@ -11,6 +11,8 @@ html,body{
     position: relative;
     display: block;
     margin: 0 auto;
+    height: 600px;
+    width: 800px;
 }
 
 #custom_zoom_in .primary_img{
@@ -55,8 +57,12 @@ html,body{
     float: left;
 }
 #custom_zoom_in .thumbs_container{
-    position: relative;
-    left: 0;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    user-select: auto!important;
+    -webkit-user-drag: auto!important;
+    touch-action:auto!important;
 }
 #custom_zoom_in .thumbs_control{
     width: 15px;
@@ -80,6 +86,11 @@ html,body{
     float: left;
     margin: 3px;
     padding: 1px;
+
+    min-width: 120px;
+    min-height: 120px;
+    /*max-width: 125px;*/
+    /*max-height: 125px;*/
 }
 
 #custom_zoom_in .zoom_gallery a img{
@@ -108,4 +119,50 @@ html,body{
 
 .contact_map-section {
   height: 500px;
+}
+
+#custom_zoom_in .thumbs_container::-webkit-scrollbar{
+    width: 1px;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) { 
+    #custom_zoom_in_container{
+        width:95vw;
+    }
+    #custom_zoom_in .zoom_image_wrapper{
+        height: 450px!important;
+        width: 100%!important;
+    }
+    #custom_zoom_in .zoom_gallery{
+        max-width: 100%;
+    }
+    #gallery{
+        overflow: hidden;
+    }
+    #custom_zoom_in .thumbs_slider{
+        height: 130px;
+        overflow-x: scroll; 
+        overflow-y: hidden; 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) { 
+    #custom_zoom_in_container{
+        width:95vw;
+    }
+    #custom_zoom_in .zoom_image_wrapper{
+        height: 350px!important;
+        width: 100%!important;
+    }
+    #custom_zoom_in .zoom_gallery{
+        max-width: 100%;
+    }
+    #gallery{
+        overflow: hidden;
+    }
+    #custom_zoom_in .thumbs_slider{
+        height: 130px;
+        overflow-x: scroll; 
+        overflow-y: hidden; 
+    }
 }
